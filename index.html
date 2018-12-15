@@ -2,55 +2,29 @@
 <html>
 
 <head>
-    <title>頁面標題</title>
+    <title>HTML5練習</title>
 </head>
 
 <body>
-    <!-- 標題 -->
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4>
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
-    <!-- 段落 -->
-    <p style="color:red" title="tooltip 1">This is a paragraph.</p>
-    <p title="tooltip 2">This is another paragraph.</p>
-    <!-- 連結 -->
-    <a href="https://www.google.com/">google</a>
-    <!-- 圖片 -->
-    <img src="https://pbs.twimg.com/profile_images/927645314630193158/ufoYTbbi_400x400.jpg" alt="ninja" width="100"
-        height="100">
-    <!-- 按鈕 -->
-    <button>Click</button>
-    <!-- 無順序清單 -->
-    <ul>
-        <li>item1</li>
-        <li>item2</li>
-    </ul>
-    <!-- 有順序清單 -->
-    <ul>
-        <li>item1</li>
-        <li>item2</li>
-    </ul>
+    <!-- usemap: 建立和map的關聯 -->
+    <img src="assets/workplace.jpg" alt="Workplace contains laptop, smart phone and coffee" usemap="#workmap">
 
-    <pre>
-        123
-        456
-    </pre>
+    <map name="workmap">
+        <!-- area: 定義可點選的區域 -->
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm">
+    </map>
 
-    <p><b>bold</b> same with <strong>strong</strong></p>
-    <p><i>italic</i> same with <em>emphasize</em></p>
-    <p>normal <small>small</small> normal and <mark>mark</mark></p>
-    <p><del>del</del> <ins>ins</ins></p>
-    <p>It is<sub>sub</sub> & <sup>sup</sup></p>
-    <br>
-    <q>No pain no gain</q>
-    <blockquote cite="https://tw.yahoo.com/">Yahoo!!!</blockquote>
-    <abbr title="System Analysis">SA</abbr>
-    <address>phone:0900000000</address>
-    <cite>海賊王</cite>
-    <bdo dir="rtl">abc</bdo>
+    <!-- HTML自適應圖片 -->
+    <picture>
+        <!-- 按照順序讀取，第一個符合就直接顯示了 -->
+        <source media="(min-width: 650px)" srcset="assets/img_pink_flowers.jpg">
+        <source media="(min-width: 465px)" srcset="assets/img_white_flower.jpg">
+        <!-- 一定要放一個img在最後，當瀏覽器不支援picture，或上述都不符時的預設圖片 -->
+        <img src="assets/img_orange_flowers.jpg" alt="of course flower">
+    </picture>
+
 </body>
 
 </html>

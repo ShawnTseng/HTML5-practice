@@ -6,24 +6,24 @@
 </head>
 
 <body>
-    <!-- usemap: 建立和map的關聯 -->
-    <img src="assets/workplace.jpg" alt="Workplace contains laptop, smart phone and coffee" usemap="#workmap">
+    <!-- 有順序 -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
 
-    <map name="workmap">
-        <!-- area: 定義可點選的區域 -->
-        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
-        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
-        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm">
-    </map>
+    <!-- 無順序 -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
 
-    <!-- HTML自適應圖片 -->
-    <picture>
-        <!-- 按照順序讀取，第一個符合就直接顯示了 -->
-        <source media="(min-width: 650px)" srcset="assets/img_pink_flowers.jpg">
-        <source media="(min-width: 465px)" srcset="assets/img_white_flower.jpg">
-        <!-- 一定要放一個img在最後，當瀏覽器不支援picture，或上述都不符時的預設圖片 -->
-        <img src="assets/img_orange_flowers.jpg" alt="of course flower">
-    </picture>
+    <dl>
+        <dt>Item 1</dt>
+        <dd>Item 1 detail description</dd>
+        <dt>Item 2</dt>
+        <dd>Item 2 detail description</dd>
+    </dl>
 
 </body>
 

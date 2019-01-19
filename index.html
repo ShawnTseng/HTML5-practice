@@ -6,45 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        myElement {
+            background: yellow;
+        }
+    </style>
 </head>
 
 <body>
-    <select name="products" id="products">
-        <option value="computer">computer</option>
-        <option value="camera">camera</option>
-        <option value="cd player">cd player</option>
-    </select>
-
-    <select name="product-set2" id="products-set2" size="2">
-        <option value="computer">computer</option>
-        <option value="camera">camera</option>
-        <option value="cd player">cd player</option>
-    </select>
-
-    <select name="product-set3" id="products-set3" size="3" multiple>
-        <option value="computer">computer</option>
-        <option value="camera">camera</option>
-        <option value="cd player">cd player</option>
-    </select>
-
-    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-
-    <input list="browsers">
-    <datalist id="browsers">
-        <option value="Internet Explorer">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-    </datalist>
-
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <input type="range" id="a" value="50">
-        100 +
-        <input type="number" id="b" value="50">
-        =
-        <output id="x"></output>
-    </form>
+    <myElement>我的元素</myElement>
 </body>
 
 </html>

@@ -1,36 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-.left {
-  background-color: #2196F3;
-  padding: 20px;
-  float: left;
-  width: 20%;
-  /* 預設寬度 20% */
-}
-
-.main {
-  background-color: #f1f1f1;
-  padding: 20px;
-  float: left;
-  width: 60%;
-  /* 預設寬度 60% */
-}
-
-.right {
-  background-color: #4CAF50;
-  padding: 20px;
-  float: left;
-  width: 20%;
-  /* 預設寬度 20% */
-}
-
-/* Use a media query to add a break point at 800px: */
-
-@media screen and (max-width:800px) {
-  .left, .main, .right {
-    width: 100%;
-    /* 可視寬度小於800px時，寬度100% */
-  }
+#myCanvas {
+  /* width: 200;
+  height: 100;
+  box-sizing: border-box; */
+  border: solid 1px #d3d3d3;
 }

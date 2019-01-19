@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        myElement {
-            background: yellow;
-        }
-    </style>
+
 </head>
 
 <body>
-    <myElement>我的元素</myElement>
+    <canvas id="canvasWithLine" width="200" height="100"></canvas>
+    <canvas id="canvasWithCircle" width="200" height="100"></canvas>
+    <canvas id="canvasWithText" width="200" height="100"></canvas>
+    <canvas id="canvasWithStrokeText" width="200" height="100"></canvas>
+    <canvas id="canvasWithLinearGradient" width="200" height="100"></canvas>
+    <canvas id="canvasWithCircularGradient" width="200" height="100"></canvas>
+
+    <p>
+        <img id="palette" src="palette.jpg" alt="Palette">
+        <canvas id="canvasWithImage"></canvas>
+        <button onclick="fillImage()">Fill it</button>
+    </p>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

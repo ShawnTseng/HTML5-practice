@@ -10,20 +10,34 @@
 </head>
 
 <body>
-    <canvas id="canvasWithLine" width="200" height="100"></canvas>
-    <canvas id="canvasWithCircle" width="200" height="100"></canvas>
-    <canvas id="canvasWithText" width="200" height="100"></canvas>
-    <canvas id="canvasWithStrokeText" width="200" height="100"></canvas>
-    <canvas id="canvasWithLinearGradient" width="200" height="100"></canvas>
-    <canvas id="canvasWithCircularGradient" width="200" height="100"></canvas>
 
-    <p>
-        <img id="palette" src="palette.jpg" alt="Palette">
-        <canvas id="canvasWithImage"></canvas>
-        <button onclick="fillImage()">Fill it</button>
-    </p>
+    <svg width="100" height="100">
+        <circle id="circle" cx="50" cy="50" r="40" />
+    </svg>
 
-    <script src="index.js"></script>
+    <svg width="400" height="100">
+        <rect id="rectangle" width="400" height="100" />
+    </svg>
+
+    <svg width="400" height="180">
+        <rect id="rectangle2" x="50" y="20" rx="20" ry="20" width="150" height="150" />
+    </svg>
+
+    <svg width="300" height="200">
+        <polygon id="polygon" points="100,10 40,198 190,78 10,78 160,198" />
+    </svg>
+
+    <svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text id="logo-text" x="50" y="86">SVG</text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
 </body>
 
 </html>

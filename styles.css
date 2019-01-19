@@ -1,6 +1,31 @@
-#myCanvas {
-  /* width: 200;
-  height: 100;
-  box-sizing: border-box; */
-  border: solid 1px #d3d3d3;
+#circle {
+  fill: yellow;
+  stroke-width: 4;
+  stroke:green;
+}
+
+#rectangle {
+  fill:rgb(0,0,255);
+  stroke-width:10;
+  stroke:rgb(0,0,0);
+}
+
+#rectangle2 {
+  fill:red;
+  stroke:black;
+  stroke-width:5;
+  opacity:0.5;
+}
+
+#polygon {
+  fill:lime;
+  stroke:purple;
+  stroke-width:5;
+  fill-rule:evenodd;
+}
+
+#logo-text {
+  fill: #ffffff;
+  font-size: 45;
+  font-family: 'Verdana';
 }

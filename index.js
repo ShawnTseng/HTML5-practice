@@ -13,3 +13,8 @@ function startWorker() {
     console.log('瀏覽器不支援web worker');
   }
 }
+
+function stopWorker() {  
+  w.terminate(); // 停止Web Worker
+  w = undefined; // 清除變數(之後w可重複使用)
+}
